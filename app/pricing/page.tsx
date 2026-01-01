@@ -97,6 +97,10 @@ export default function PricingPage() {
                 </div>
                 <div className="flex items-start gap-2 text-muted-foreground">
                   <Icon icon="lucide:check" width={14} className="text-green-500 mt-0.5 shrink-0" />
+                  <span>1 custom domain</span>
+                </div>
+                <div className="flex items-start gap-2 text-muted-foreground">
+                  <Icon icon="lucide:check" width={14} className="text-green-500 mt-0.5 shrink-0" />
                   <span>Unlimited sandbox</span>
                 </div>
                 <div className="flex items-start gap-2 text-muted-foreground">
@@ -153,6 +157,10 @@ export default function PricingPage() {
                   <div className="flex items-start gap-2 text-white/90">
                     <Icon icon="lucide:check" width={14} className="text-green-400 mt-0.5 shrink-0" />
                     <span>5GB data, GHS 30 airtime</span>
+                  </div>
+                  <div className="flex items-start gap-2 text-white/90">
+                    <Icon icon="lucide:check" width={14} className="text-green-400 mt-0.5 shrink-0" />
+                    <span>3 custom domains</span>
                   </div>
                   <div className="flex items-start gap-2 text-white/90">
                     <Icon icon="lucide:check" width={14} className="text-green-400 mt-0.5 shrink-0" />
@@ -226,6 +234,10 @@ export default function PricingPage() {
                   </div>
                   <div className="flex items-start gap-2 text-white/90">
                     <Icon icon="lucide:check" width={14} className="text-green-400 mt-0.5 shrink-0" />
+                    <span>10 custom domains</span>
+                  </div>
+                  <div className="flex items-start gap-2 text-white/90">
+                    <Icon icon="lucide:check" width={14} className="text-green-400 mt-0.5 shrink-0" />
                     <span>Everything in Starter</span>
                   </div>
                   <div className="flex items-start gap-2 text-white/90">
@@ -290,6 +302,10 @@ export default function PricingPage() {
                   </div>
                   <div className="flex items-start gap-2 text-[#282623]">
                     <Icon icon="lucide:check" width={14} className="text-green-600 mt-0.5 shrink-0" />
+                    <span>25 custom domains</span>
+                  </div>
+                  <div className="flex items-start gap-2 text-[#282623]">
+                    <Icon icon="lucide:check" width={14} className="text-green-600 mt-0.5 shrink-0" />
                     <span>Everything in Pro</span>
                   </div>
                   <div className="flex items-start gap-2 text-[#282623]">
@@ -347,6 +363,10 @@ export default function PricingPage() {
                   <div className="flex items-start gap-2 text-white/90">
                     <Icon icon="lucide:check" width={14} className="text-cyan-400 mt-0.5 shrink-0" />
                     <span>Custom volume</span>
+                  </div>
+                  <div className="flex items-start gap-2 text-white/90">
+                    <Icon icon="lucide:check" width={14} className="text-cyan-400 mt-0.5 shrink-0" />
+                    <span>100+ custom domains</span>
                   </div>
                   <div className="flex items-start gap-2 text-white/90">
                     <Icon icon="lucide:check" width={14} className="text-cyan-400 mt-0.5 shrink-0" />
@@ -456,6 +476,7 @@ export default function PricingPage() {
                   { feature: "Emails per month", free: "500", starter: "2,000", pro: "10,000", business: "40,000", enterprise: "Custom" },
                   { feature: "Data", free: "1GB", starter: "5GB", pro: "30GB", business: "150GB", enterprise: "Custom" },
                   { feature: "Airtime", free: "GHS 10", starter: "GHS 30", pro: "GHS 150", business: "GHS 600", enterprise: "Custom" },
+                  { feature: "Custom domains", free: "1", starter: "3", pro: "10", business: "25", enterprise: "100+" },
                   { feature: "Sandbox", free: "Unlimited", starter: "Unlimited", pro: "Unlimited", business: "Unlimited", enterprise: "Unlimited" },
                   { feature: "Support", free: "Community", starter: "Email", pro: "Priority", business: "Phone", enterprise: "Dedicated" },
                   { feature: "Remove branding", free: false, starter: true, pro: true, business: true, enterprise: true },

@@ -47,10 +47,10 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li><Link href="/features" className="hover:text-foreground transition-colors">Features</Link></li>
               <li><Link href="/pricing" className="hover:text-foreground transition-colors">Pricing</Link></li>
-              <li><Link href="/docs/api/email" className="hover:text-foreground transition-colors">Email API</Link></li>
-              <li><Link href="/docs/api/sms" className="hover:text-foreground transition-colors">SMS API</Link></li>
-              <li><Link href="/docs/api/data" className="hover:text-foreground transition-colors">Data Bundles</Link></li>
-              <li><Link href="/docs/api/airtime" className="hover:text-foreground transition-colors">Airtime</Link></li>
+              <li><Link href="/email" className="hover:text-foreground transition-colors">Email API</Link></li>
+              <li><Link href="/sms" className="hover:text-foreground transition-colors">SMS API</Link></li>
+              <li><Link href="/data" className="hover:text-foreground transition-colors">Data Bundles</Link></li>
+              <li><Link href="/airtime" className="hover:text-foreground transition-colors">Airtime</Link></li>
             </ul>
           </div>
 
