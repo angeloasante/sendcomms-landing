@@ -15,19 +15,19 @@
   --border: #e2e8f0;
 }
 
-/* Dark mode */
+/* Dark mode - Resend-style true black */
 .dark {
-  --background: #0a0a0f;
-  --foreground: #f8fafc;
-  --card: #111318;
-  --card-foreground: #f8fafc;
-  --primary: #f8fafc;
-  --primary-foreground: #0a0a0f;
-  --muted: #1e293b;
-  --muted-foreground: #94a3b8;
-  --accent: #1e293b;
-  --accent-foreground: #f8fafc;
-  --border: #334155;
+  --background: #000000;
+  --foreground: #fafafa;
+  --card: #0a0a0a;
+  --card-foreground: #fafafa;
+  --primary: #fafafa;
+  --primary-foreground: #000000;
+  --muted: #171717;
+  --muted-foreground: #a1a1aa;
+  --accent: #171717;
+  --accent-foreground: #fafafa;
+  --border: #262626;
 }
 
 @theme inline {
@@ -58,6 +58,15 @@
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
 }
 
 body {

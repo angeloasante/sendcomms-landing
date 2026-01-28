@@ -6,8 +6,22 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="bg-card border-t border-border pt-16 pb-12 relative z-10 mt-24">
+    <footer className="bg-card border-t border-border pt-16 pb-12 relative z-10 mt-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
+        {/* Large Scrolling Brand Text */}
+        <div className="mb-16 relative overflow-hidden">
+          <div className="flex animate-marquee whitespace-nowrap">
+            {[...Array(4)].map((_, i) => (
+              <span 
+                key={i}
+                className="text-[8rem] md:text-[12rem] lg:text-[16rem] font-black tracking-tighter leading-none text-transparent bg-clip-text bg-gradient-to-b from-muted-foreground/20 to-transparent select-none mx-8"
+              >
+                SendComms
+              </span>
+            ))}
+          </div>
+        </div>
+
         {/* Main Footer Content */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Brand Column */}
@@ -73,18 +87,6 @@ export function Footer() {
               <li><Link href="/careers" className="hover:text-foreground transition-colors">Careers</Link></li>
               <li><Link href="/contact" className="hover:text-foreground transition-colors">Contact</Link></li>
               <li><Link href="/partners" className="hover:text-foreground transition-colors">Partners</Link></li>
-            </ul>
-          </div>
-
-          {/* Resources Column */}
-          <div>
-            <h4 className="text-sm font-semibold text-foreground mb-4">Resources</h4>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li><Link href="/support" className="hover:text-foreground transition-colors">Help Center</Link></li>
-              <li><Link href="/status" className="hover:text-foreground transition-colors">System Status</Link></li>
-              <li><Link href="/security" className="hover:text-foreground transition-colors">Security</Link></li>
-              <li><Link href="/compliance" className="hover:text-foreground transition-colors">Compliance</Link></li>
-              <li><a href="https://community.sendcomms.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Community</a></li>
             </ul>
           </div>
         </div>
